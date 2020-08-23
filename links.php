@@ -11,7 +11,7 @@ $this->need('layout/_partial/head.php');
 <style>
 article ul li {
     transition: all .03s;
-    width: calc(12.5% - 10px);
+    width: 120px;       /* 由calc(12.5% - 10px) 改为 120px */
     margin: 5px;
     border-radius: 4px;
     border: 1px solid #eee;
@@ -30,23 +30,23 @@ article ul {
 
 article ul li img {
   height:110px;
-    width: 100%;
+    width: 100%;        /* 由 100% 改为 120px */
     border-radius: 0;
     border: none;
     display: block;
 }
       article ul li a {
- top: 10px;
+                        /* 由  top: 10px; 改为删除  */
     font-size: 15px;
     color: #606266;
     -webkit-transition: none;
     transition: none;
  margin-bottom: 5px;
     display: block;
-    position: relative;
-    width: 100%;
+                     /* 由  position: relative; 改为删除  */
+    width: 120px;     /* 由  100% 改为 120px  */
     border: none;
-height:30px;
+                     /* 由  height:30px; 改为删除 */
     margin-top: -2px;
     text-align: center;
     overflow: hidden;
